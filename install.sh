@@ -18,5 +18,6 @@ if is-executable git -a -d "$DOTFILES_DIR/.git"; then git --work-tree="$DOTFILES
 ln -sfv "$DOTFILES_DIR/system/.bash_profile" ~
 ln -sfv "$DOTFILES_DIR/system/.inputrc" ~
 ln -sfv "$DOTFILES_DIR/.vimrc" ~
+ln -sfv "$DOTFILES_DIR/.hyper.js" ~
 mkdir -p ~/.config/nvim/
 ln -sfv ~/.vimrc ~/.config/nvim/init.vim
