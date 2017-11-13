@@ -20,5 +20,6 @@ ln -sfv "$DOTFILES_DIR/system/.inputrc" ~
 ln -sfv "$DOTFILES_DIR/.vimrc" ~
 ln -sfv "$DOTFILES_DIR/.zshrc" ~
 ln -sfv "$DOTFILES_DIR/.hyper.js" ~
+ln -sfv "$DOTFILES_DIR/.tern-config" ~
 mkdir -p ~/.config/nvim/
 ln -sfv ~/.vimrc ~/.config/nvim/init.vim

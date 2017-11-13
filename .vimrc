@@ -1,9 +1,15 @@
+" dark background
+set background=dark
+
 " show line number
 set number
 highlight LineNr ctermfg=grey
 
 " Sets how many lines of history VIM has to remember
 set history=500
+
+" faster update time
+set updatetime=250
 
 " Enable filetype plugins
 filetype plugin on
@@ -139,6 +145,7 @@ let g:ale_fix_on_save = 1
 let g:ale_lint_on_text_changed = 'never'
 
 Plug 'airblade/vim-gitgutter'
+let g:gitgutter_realtime = 1
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
