@@ -8,6 +8,7 @@ Install requirements:
 * nvim
 * vim-plug
 * zsh
+* zsh-syntax-highlighting
 
 ```
 npm install -g prettier-standard pure-promt
