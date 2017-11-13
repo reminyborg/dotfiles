@@ -23,13 +23,8 @@ command W w !sudo tee % > /dev/null
 " Turn on the WiLd menu
 set wildmenu
 
-" Ignore compiled files
-set wildignore=*.o,*~,*.pyc
-if has("win16") || has("win32")
-    set wildignore+=.git\*,.hg\*,.svn\*
-else
-    set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
-endif
+" Ignore files
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 
 " Ignore case when searching
 set ignorecase
@@ -140,6 +135,7 @@ endtry
 call plug#begin('~/.vim/plugged')
 
 Plug 'ctrlpvim/ctrlp.vim'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|vendor)|(\.(git|svn))$'
 
 Plug 'w0rp/ale'
 let g:ale_fixers = {'javascript': ['prettier_standard']}
