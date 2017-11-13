@@ -98,16 +98,15 @@ module.exports = {
     bell: false,
 
     // if true, selected text will automatically be copied to the clipboard
-    copyOnSelect: false
+    copyOnSelect: false,
 
     // if true, on right click selected text will be copied or pasted if no
     // selection is present (true by default on Windows)
     // quickEdit: true
 
-    // URL to custom bell
-    // bellSoundURL: 'http://example.com/bell.mp3',
-
-    // for advanced config flags please refer to https://hyper.is/#cfg
+    paneNavigation: {
+      showIndicators: false
+    }
   },
 
   // a list of plugins to fetch and install from npm
@@ -116,7 +115,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyper-snazzy', 'hypercwd'],
+  plugins: ['hyper-pane', 'hyper-snazzy'],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here

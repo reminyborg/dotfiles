@@ -1,3 +1,7 @@
+" show line number
+set number
+highlight LineNr ctermfg=grey
+
 " Sets how many lines of history VIM has to remember
 set history=500
 
@@ -110,15 +114,6 @@ map <leader>cd :cd %:p:h<cr>:pwd<cr>
 " Return to last edit position when opening files (You want this!)
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-""""""""""""""""""""""""""""""
-" => Status line
-""""""""""""""""""""""""""""""
-" Always show the status line
-set laststatus=2
-
-" Format the status line
-set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Turn persistent undo on 
 "    means that you can undo even when you close a buffer/VIM
@@ -139,8 +134,13 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules|vendor)|(\.(git|svn))$'
 
 Plug 'w0rp/ale'
 let g:ale_fixers = {'javascript': ['prettier_standard']}
-let g:ale_linters = {'javascript': ['']}
+let g:ale_linters = {'javascript': ['standard']}
 let g:ale_fix_on_save = 1
+
+Plug 'airblade/vim-gitgutter'
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Initialize plugin system
 call plug#end()
