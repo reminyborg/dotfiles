@@ -136,11 +136,17 @@ Plug 'w0rp/ale'
 let g:ale_fixers = {'javascript': ['prettier_standard']}
 let g:ale_linters = {'javascript': ['standard']}
 let g:ale_fix_on_save = 1
+let g:ale_lint_on_text_changed = 'never'
 
 Plug 'airblade/vim-gitgutter'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+let g:airline#extensions#ale#enabled = 1
+
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+let g:deoplete#enable_at_startup = 1
 
 " Initialize plugin system
 call plug#end()
