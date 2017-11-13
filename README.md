@@ -4,13 +4,13 @@ Usage
 
 Install requirements:
 
-npm
-nvim
-vim-plug
-zsh
+* npm
+* nvim
+* vim-plug
+* zsh
 
 ```
-npm install --global pure-prompt
+npm install -g prettier-standard pure-promt
 ```
 
 run:
