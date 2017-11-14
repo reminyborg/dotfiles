@@ -26,10 +26,6 @@ let g:mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
-" :W sudo saves the file 
-" (useful for handling the permission-denied error)
-command W w !sudo tee % > /dev/null
-
 " Turn on the WiLd menu
 set wildmenu
 
@@ -154,6 +150,8 @@ let g:airline#extensions#ale#enabled = 1
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 let g:deoplete#enable_at_startup = 1
+
+Plug 'jelera/vim-javascript-syntax'
 
 " Initialize plugin system
 call plug#end()
