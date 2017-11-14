@@ -21,5 +21,7 @@ ln -sfv "$DOTFILES_DIR/.vimrc" ~
 ln -sfv "$DOTFILES_DIR/.zshrc" ~
 ln -sfv "$DOTFILES_DIR/.hyper.js" ~
 ln -sfv "$DOTFILES_DIR/.tern-config" ~
+ln -sfv "$DOTFILES_DIR/.gitignore" ~
+git config --global core.excludesfile '~/.gitignore'
 mkdir -p ~/.config/nvim/
 ln -sfv ~/.vimrc ~/.config/nvim/init.vim
