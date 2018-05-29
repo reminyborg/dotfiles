@@ -149,7 +149,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 let g:deoplete#enable_at_startup = 1
 
-Plug 'jelera/vim-javascript-syntax'
+Plug 'pangloss/vim-javascript'
 Plug 'Quramy/vim-js-pretty-template'
 autocmd FileType javascript JsPreTmpl html
 

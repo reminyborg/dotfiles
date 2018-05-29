@@ -5,3 +5,4 @@ export PS1="\W ✨ "
 export EDITOR=/usr/bin/nvim
 
 alias vim="nvim"
+alias python="python3"
