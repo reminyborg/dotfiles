@@ -11,7 +11,7 @@ Install requirements:
 * zsh-syntax-highlighting
 
 ```
-npm install -g prettier-standard pure-promt
+npm install -g spaceship-promt
 ```
 
 run:

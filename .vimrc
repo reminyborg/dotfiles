@@ -66,6 +66,7 @@ set foldcolumn=0
 
 " Enable syntax highlighting
 syntax enable
+syntax sync minlines=1000
 
 " Turn backup off, since most stuff is in SVN, git et.c anyway...
 set nobackup
@@ -151,7 +152,8 @@ let g:deoplete#enable_at_startup = 1
 
 Plug 'pangloss/vim-javascript'
 Plug 'Quramy/vim-js-pretty-template'
-autocmd FileType javascript JsPreTmpl html
+
+autocmd FileType javascript JsPreTmpl
 
 Plug 'posva/vim-vue'
 

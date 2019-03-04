@@ -4,8 +4,11 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/remi/.oh-my-zsh
 
+export PATH="$PATH:$HOME/repos/tools/flutter/bin"
+
 alias python="python3"
 alias pip="pip3"
+alias vim="nvim"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -20,8 +23,6 @@ plugins=(
   git,
   zsh-syntax-highlighting
 )
-
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -49,7 +50,6 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias vim="nvim"
 
 autoload -U promptinit; promptinit
 prompt pure
@@ -79,3 +79,5 @@ function zle-line-init zle-keymap-select {
 }
 zle -N zle-line-init
 zle -N zle-keymap-select
+export PATH="/usr/local/opt/php@7.2/bin:$PATH"
+export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
