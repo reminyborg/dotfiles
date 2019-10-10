@@ -153,6 +153,8 @@ let g:deoplete#enable_at_startup = 1
 Plug 'pangloss/vim-javascript'
 Plug 'Quramy/vim-js-pretty-template'
 
+Plug 'rust-lang/rust.vim'
+
 autocmd FileType javascript JsPreTmpl
 
 Plug 'posva/vim-vue'
