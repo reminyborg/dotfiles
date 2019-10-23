@@ -11,4 +11,4 @@ networksetup -setsocksfirewallproxystate Wi-Fi on
 echo "SOCKS proxy enabled."
 echo "Tunneling..."
 
-ssh -ND 1337 beta
+autossh -M 0 -ND 1337 beta -o ExitOnForwardFailure=yes
