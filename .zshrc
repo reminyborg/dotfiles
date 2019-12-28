@@ -3,6 +3,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/remi/.oh-my-zsh
+export PATH=$PATH:/Users/remi/repos/flutter/bin
 
 export PATH="$PATH:$HOME/repos/tools/flutter/bin"
 

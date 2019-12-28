@@ -77,7 +77,7 @@ set noswapfile
 set expandtab
 
 " Be smart when using tabs ;)
-set smarttab
+" set smarttab
 
 " 1 tab == 2 spaces
 set shiftwidth=2
@@ -85,7 +85,7 @@ set tabstop=2
 
 set ai "Auto indent
 set si "Smart indent
-set wrap "Wrap lines
+set nowrap
 
 " Smart way to move between windows
 map <C-j> <C-W>j
@@ -133,7 +133,7 @@ endtry
 call plug#begin('~/.vim/plugged')
 
 Plug 'ctrlpvim/ctrlp.vim'
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|vendor)|(\.(git|svn))$'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|vendor|dist|build|drivers)|(\.(git|svn))$'
 
 Plug 'w0rp/ale'
 let g:ale_linters = {'javascript': ['standard']}
@@ -148,7 +148,7 @@ let g:airline#extensions#ale#enabled = 1
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
-let g:deoplete#enable_at_startup = 1
+" let g:deoplete#enable_at_startup = 1
 
 Plug 'pangloss/vim-javascript'
 Plug 'Quramy/vim-js-pretty-template'
@@ -158,6 +158,8 @@ Plug 'rust-lang/rust.vim'
 autocmd FileType javascript JsPreTmpl
 
 Plug 'posva/vim-vue'
+
+Plug 'othree/html5.vim'
 
 " Initialize plugin system
 call plug#end()
