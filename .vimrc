@@ -152,6 +152,7 @@ Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 
 Plug 'pangloss/vim-javascript'
 Plug 'Quramy/vim-js-pretty-template'
+Plug 'tomtom/tcomment_vim'
 
 Plug 'rust-lang/rust.vim'
 
