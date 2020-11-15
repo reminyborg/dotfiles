@@ -156,8 +156,6 @@ Plug 'tomtom/tcomment_vim'
 
 Plug 'rust-lang/rust.vim'
 
-autocmd FileType javascript JsPreTmpl
-
 Plug 'posva/vim-vue'
 
 Plug 'othree/html5.vim'

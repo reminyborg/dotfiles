@@ -82,3 +82,4 @@ zle -N zle-line-init
 zle -N zle-keymap-select
 export PATH="/usr/local/opt/php@7.2/bin:$PATH"
 export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
