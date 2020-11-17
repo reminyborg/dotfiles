@@ -150,13 +150,15 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 " let g:deoplete#enable_at_startup = 1
 
-Plug 'pangloss/vim-javascript'
 Plug 'Quramy/vim-js-pretty-template'
 Plug 'tomtom/tcomment_vim'
 
 Plug 'rust-lang/rust.vim'
 
 Plug 'posva/vim-vue'
+
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
 
 Plug 'othree/html5.vim'
 
