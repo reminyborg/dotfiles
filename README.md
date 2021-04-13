@@ -11,7 +11,11 @@ Install requirements:
 * zsh-syntax-highlighting
 
 ```
-npm install -g spaceship-promt
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+```
+npm install --global pure-prompt
 ```
 
 run:
