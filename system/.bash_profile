@@ -4,9 +4,7 @@ export LC_ALL=en_US.UTF-8
 
 alias vim="nvim"
 alias python="python3"
-<<<<<<< Updated upstream
 
 export PATH="$HOME/.cargo/bin:$PATH"
-=======
+source "$HOME/.profile"
 alias start="npm start"
->>>>>>> Stashed changes

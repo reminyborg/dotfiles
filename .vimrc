@@ -161,6 +161,7 @@ Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 
 Plug 'othree/html5.vim'
+Plug 'statico/vim-javascript-sql'
 
 " Initialize plugin system
 call plug#end()
